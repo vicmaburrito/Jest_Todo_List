@@ -4,7 +4,7 @@
   "description": "![](https://img.shields.io/badge/Microverse-blueviolet) ![](https://img.shields.io/github/followers/vicmaburrito?style=social)",
   "private": true,
   "scripts": {
-    "test": "jest",
+    "test": "jest --coverage --env=jsdom",
     "start": "webpack serve --open",
     "build": "webpack"
   },
@@ -21,6 +21,9 @@
   "homepage": "https://github.com/vicmaburrito/To-do_list#readme",
   "devDependencies": {
     "@babel/plugin-transform-modules-commonjs": "^7.15.4",
+    "@babel/preset-env": "^7.15.8",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
     "babel-eslint": "^10.1.0",
     "css-loader": "^6.3.0",
     "eslint": "^7.32.0",
