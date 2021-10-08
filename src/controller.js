@@ -1,5 +1,6 @@
 function createTodo(todoItem, todoList) {
   todoList.push(todoItem);
+  return todoList;
 }
 
 function destroyTodo(todo, todoList) {
@@ -10,6 +11,7 @@ function destroyTodo(todo, todoList) {
       todo.index -= 1;
     }
   });
+  return todoList;
 }
 
 function updateTodo(newTodo, oldTodo) {
